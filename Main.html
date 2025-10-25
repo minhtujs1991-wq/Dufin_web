@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	
+<title>Main</title>
+	
+<script src="Jquery/jquery.min.js"> </script>
+
+<link href="webfonts/Roboto-Regular/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="webfonts/Roboto-Bold/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="webfonts/Roboto-Medium/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="webfonts/Roboto-Italic/stylesheet.css" rel="stylesheet" type="text/css">
+
+<link href="webfonts/Inter-Regular/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="webfonts/Inter-Medium/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="webfonts/Inter-Semibold/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="webfonts/Inter-Bold/stylesheet.css" rel="stylesheet" type="text/css">
+
+<link href="css/Main.css" rel="stylesheet" type="text/css">	
+	
+<style type="text/css">
+	html body {
+		user-select: none;
+		overflow: hidden;
+		margin: 0px;
+	}
+
+</style>
+	
+	
+</head>
+
+<body>
+
+<div id="Main">
+	<video id="Main_BG" autoplay loop muted>
+		<source src="video/Background.mp4" type="video/mp4">
+	</video>
+	<div id="Main_Noidung">
+		<div id="Main_Noidung_1">
+			<img class="Avatar" src="image/Avatar_1.png" alt="">
+			<img class="Avatar_2" src="image/Logo_2.png" alt="">
+			<div class="Ten">VAY QUA CĂN CƯỚC</div>
+			<img class="Event" src="image/Event_1.png" alt="">
+			<img class="Event" src="image/Event_2.png" alt="">
+			<img class="Event" src="image/Event_3.png" alt="">
+			<img class="Event" src="image/Event_4.png" alt="">
+			<img id="Main_Noidung_1_Nut_DangkyVay" class="Event" src="image/Nut_Dangky_2.png" alt="">
+		</div>
+		
+		<div id="Main_Noidung_2">
+			<img class="Avatar" src="image/Avatar_1.png" alt="">
+			<img class="Avatar_2" src="image/Logo_2.png" alt="">
+			<div class="Ten"></div>
+			<div class="Cauhoi_Box">
+				<div class="Cauhoi_Box_1">
+					Nhu cầu vay của bạn là
+				</div>
+				<div class="Cauhoi_Box_2">
+					<input id="Sotienvay_1" class="Sotienvay_Input" 
+						type="range" min="50000000" max="400000000" step="1000000" value="" />
+					<div id="Sotienvay_1_Box" class="Sotienvay_Input_Box">...</div>
+				</div>
+			</div>
+			<img class="Event" src="image/Nut_Tieptheo.png" alt="">
+			<div class="Tientrinh">Tiến trình : <span>1/4</span></div>
+		</div>
+		
+		<div id="Main_Noidung_3">
+			<img class="Avatar" src="image/Avatar_1.png" alt="">
+			<img class="Avatar_2" src="image/Logo_2.png" alt="">
+			<div class="Ten"></div>
+			<div class="Cauhoi_Box">
+				<div class="Cauhoi_Box_1">
+					Bạn có đang làm việc tại Hà Nội
+				</div>
+				<div class="Cauhoi_Box_3">
+					<div id="LamviecTaiHN_Co" class="LamviecTaiHN_Button">Có</div>
+					<div id="LamviecTaiHN_Khong" class="LamviecTaiHN_Button">Không</div>
+				</div>
+			</div>
+			<img class="Event" src="image/Nut_Tieptheo.png" alt="">
+			<div class="Tientrinh">Tiến trình : <span>2/4</span></div>
+		</div>
+		
+		<div id="Main_Noidung_4">
+			<img class="Avatar" src="image/Avatar_1.png" alt="">
+			<img class="Avatar_2" src="image/Logo_2.png" alt="">
+			<div class="Ten"></div>
+			<div class="Cauhoi_Box">
+				<div class="Cauhoi_Box_1">
+					Bạn có đang dính <span style="color: red">nợ xấu</span> tại <br> Ngân hàng hay Tổ chức tài chính
+				</div>
+				<div class="Cauhoi_Box_3">
+					<div id="DinhNoxau_Co" class="LamviecTaiHN_Button">Có</div>
+					<div id="DinhNoxau_Khong" class="LamviecTaiHN_Button">Không</div>
+				</div>
+			</div>
+			<img class="Event" src="image/Nut_Tieptheo.png" alt="">
+			<div class="Tientrinh">Tiến trình : <span>3/4</span></div>
+		</div>
+		
+		<div id="Main_Noidung_5">
+			<img class="Avatar" src="image/Avatar_1.png" alt="">
+			<img class="Avatar_2" src="image/Logo_2.png" alt="">
+			<div class="Ten"></div>
+			<div class="Cauhoi_Box">
+				<div class="Cauhoi_Box_1">
+					Nhập thông tin của bạn.
+				</div>
+				<div class="Cauhoi_Box_4">
+					<form id="contactForm" class="DienThongtin" novalidate>
+						<div>
+							<label for="fullName">Họ &amp; Tên</label>
+							<input type="text" id="fullName" placeholder="Nguyễn Văn A" required>
+						</div>
+						<div>
+							<label for="phone">Số điện thoại</label>
+							<input type="tel" id="phone" placeholder="0xxxxxxxxx hoặc +84xxxxxxxxx" required
+								 pattern="^(\+84|0)\d{9,10}$">
+						</div>
+						<div>
+							<label for="facebook">Địa chỉ Facebook (URL)</label>
+							<input type="url" id="facebook" placeholder="https://facebook.com/your.profile" required>
+						</div>
+						<div class="button-row">
+							<button type="submit" class="btn-submit">Gửi</button>
+							<button type="button" class="btn-reset" id="resetBtn">Xóa</button>
+						</div>
+						<div id="formMessage"></div>
+					</form>
+				</div>
+			</div>
+			<div class="Tientrinh">Tiến trình : <span>4/4</span></div>
+		</div>
+		
+		<div id="Main_Noidung_6">
+			<img class="Avatar" src="image/Avatar_1.png" alt="">
+			<img class="Avatar_2" src="image/Logo_2.png" alt="">
+			<div class="Ten"></div>
+			<div class="Cauhoi_Box">
+				<div class="Cauhoi_Box_1">
+					Chúng tôi đã tiếp nhận <br> 
+					thông tin của bạn và <br> 
+					sẽ sớm liên lạc với bạn để hỗ trợ. <br>
+					_____ <br>
+					<span style="color: white">Hãy tham gia với chúng tôi thông qua</span><br>
+
+				</div>
+			</div>
+
+			<img id="Main_Noidung_6_Nut_Zalo" class="Event_2" src="image/Nut_Congdong_Zalo_2.png" alt="">
+			
+		</div>
+	</div>
+</div>
+
+<script src="Data/Swiper_Option.js"> </script>
+<script src="Data/Data_Chung.js"> </script>
+<script src="Data/Start_Up.js"> </script>
+<script src="Data/All_Function.js"> </script>
+<script src="Data/Click_Event.js"> </script>
+<script> 
+
+</script>
+    
+</body>
+</html>
